@@ -1,0 +1,284 @@
+.header {
+  width: 100%;
+  background-color: white; }
+
+.header__tituloPrincipal {
+  color: #e342f5;
+  font-family: "Amatic SC", cursive;
+  font-size: 50px; }
+
+nav {
+  background-color: #F08080;
+  width: 100%;
+  margin-bottom: 30px; }
+
+.navbar__nav--grad {
+  background-image: linear-gradient(to bottom, #f3c4ee, lavenderblush);
+  text-decoration: none;
+  color: black;
+  font-family: "Mulish", sans-serif; }
+
+.footer {
+  width: 168%;
+  height: 175%;
+  margin-top: 150px;
+  bottom: 0; }
+
+.footer--luna {
+  margin-top: 150px;
+  bottom: 0; }
+
+.footer__negrita {
+  font-weight: bold; }
+
+.footer--grad {
+  background-image: linear-gradient(to bottom, lavenderblush, #f3c4ee); }
+
+a {
+  text-decoration: none;
+  color: black !important; }
+
+#imagenPrincipal {
+  width: 450px;
+  height: 400px; }
+
+.carousel-inner .carousel-item img {
+  min-height: 200px;
+  object-fit: cover;
+  height: 1%; }
+
+.centrar {
+  text-align: center; }
+
+.letrasAstrologia {
+  color: #7542f5; }
+
+.astropibasContenidoIndex {
+  margin-top: 3rem;
+  padding: 1.5rem; }
+
+.astropibasContenidoIndex__2 {
+  padding: 1.5rem; }
+
+.astropibasContenidoIndex__subtitulo {
+  color: #f542e3;
+  margin-bottom: 10px; }
+
+.astrobasicos {
+  font-family: "Mulish", sans-serif !important; }
+
+.astrobasicos__titulos {
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem; }
+
+.astrobasicos__titulos--color {
+  color: #f542e3; }
+
+.subtitulosAstro {
+  color: #f542e3;
+  margin-bottom: 10px; }
+
+.logoigQS {
+  width: 3%; }
+
+.logofbQS {
+  width: 3%; }
+
+.logospotQS {
+  width: 3.8%; }
+
+.logoig {
+  width: 2%; }
+
+.logofb {
+  width: 2%; }
+
+.logospot {
+  width: 2.5%; }
+
+.logoPlaneta {
+  width: 17%;
+  height: 17%;
+  padding-left: 10px; }
+
+.logoSol {
+  width: 14%;
+  height: 14%;
+  padding-left: 10px; }
+
+.logoCasa {
+  width: 70%;
+  height: 70%;
+  padding-left: 10px; }
+
+.textoTienda {
+  color: #f542e3;
+  margin-top: 10px; }
+
+.imagenTienda {
+  width: 350px;
+  height: 350px;
+  padding-left: 150px; }
+
+.imagen1:hover {
+  transform: scale(1.2, 1.2); }
+
+.imagenSigno {
+  width: 55%;
+  height: 52%;
+  display: block;
+  margin: auto; }
+
+.imagenPlaneta {
+  width: 54%;
+  height: 40%;
+  display: block;
+  margin: auto; }
+
+.imagenCasas {
+  width: 55%;
+  height: 45%;
+  display: block;
+  margin: auto;
+  margin-top: 6rem; }
+
+.comoInterpretarlo {
+  width: 55%;
+  height: 55%;
+  display: block;
+  margin: auto; }
+
+.imagenLuna {
+  width: 100%;
+  height: 100%; }
+
+.mecanismosLunares {
+  padding: 1.5em; }
+
+.ajustarImagen {
+  width: 40%; }
+
+.centrarImagen {
+  text-align: center;
+  margin-top: 30px; }
+
+.imgAstropibas {
+  width: 5%;
+  height: 5%; }
+
+/*---------------*/
+.alinearimg {
+  display: inline-block; }
+
+.bordes {
+  border: solid pink 4px;
+  padding: 30px 30px 30px 30px; }
+
+.bordesQS {
+  border: solid pink 2px;
+  padding: 15px 15px;
+  text-align: center;
+  width: 90%; }
+
+.bordesForm {
+  border: solid pink 4px; }
+
+#listaNavbar {
+  list-style: none;
+  display: -webkit-inline-box; }
+
+.separarSub {
+  padding-right: 10px; }
+
+.menuLink {
+  text-decoration: none;
+  color: black;
+  font-family: "Mulish", sans-serif; }
+
+.col {
+  display: flex;
+  flex-direction: column;
+  height: max-content; }
+
+.rowTienda {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+  margin-left: 40px; }
+
+/*------------------.}*/
+.grilla {
+  display: grid;
+  grid-template-areas: "header 	header 	   header" "cuadro    cuadro     imagen" "info      info 	   imagen" "footer 	footer 	   footer";
+  grid-template-rows: 200px 1fr 1fr 110px;
+  grid-template-columns: auto auto 35%; }
+
+.grilla--header {
+  grid-area: header; }
+
+.grilla--footer {
+  grid-area: footer; }
+
+.grilla__cuadro {
+  grid-area: cuadro; }
+
+.grilla__info {
+  grid-area: info; }
+  .grilla__info p {
+    margin-left: 1rem !important; }
+
+.grilla__imagen {
+  grid-area: imagen; }
+
+.grilla__imagen--ajustar {
+  width: 100%; }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .logoig {
+    width: 6%; }
+  .logofb {
+    width: 6%; }
+  .logospot {
+    width: 7%; }
+  .logoPlaneta {
+    width: 32%;
+    height: 32%;
+    padding-left: 10px; }
+  .logoSol {
+    width: 30%;
+    height: 30%;
+    padding-left: 10px; }
+  .logoCasa {
+    width: 75%;
+    height: 75%;
+    padding-left: 10px; }
+  .imagenSigno {
+    width: 91%;
+    height: 31%;
+    display: block;
+    margin: auto; }
+  .imagenPlaneta {
+    width: 89%;
+    height: 16%;
+    display: block;
+    margin: auto;
+    margin-top: 3rem; }
+  .imagenCasas {
+    width: 91%;
+    height: 29%;
+    display: block;
+    margin: auto;
+    margin-top: 9rem; }
+  .comoInterpretarlo {
+    width: 91%;
+    height: 31%;
+    display: block;
+    margin: auto;
+    margin-top: 4rem; } }
+
+.boton {
+  border-radius: 90px !important;
+  padding: 1rem 3rem;
+  color: black;
+  background-color: orchid; }

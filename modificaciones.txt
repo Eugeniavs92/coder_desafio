@@ -1,0 +1,5 @@
+﻿Se agregaron keywords: a todas las páginas de html
+Se agregó meta description: a todas las páginas de html
+Se modificó el html Astrobásicos agregándole un link hacia el html “Luna”
+Se agregaron imágenes y nueva información a Astrobásicos
+En la sección Contacto se agregó un botón nuevo de "Enviar mensaje"
