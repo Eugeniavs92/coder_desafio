@@ -14,6 +14,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
 
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.css">
@@ -26,49 +27,41 @@
 <body class="animate__animated animate__fadeIn">
 
     <header class="header">
-        <h1 class="header__tituloPrincipal container-fluid">Tu Carta</h1>
-
-        <nav class="navbar navbar-expand-md navbar-light bg-light navbar__nav--grad letrasAstrologia">
-
-            <a class="navbar-brand" href="index.html">Inicio</a>
-
+        <nav class="navbar navbar-expand-md navbar-light bg-light navbar__nav--grad letrasAstrologia2">
+            <h1 class="header__tituloPrincipal container-fluid">
+                Tu Carta
+                <img src="imagenes/astropibas.jpg" width="60" height="60" class="rounded-circle d-inline-block align-top mr-auto ml-2" alt="" loading="lazy">
+            </h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
+					    <span class="navbar-toggler-icon"></span>
+			        </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                <ul class="navbar-nav mr-auto">
-
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="astrobasicos.html">Astrobásicos <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">INICIO <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="tuCarta.html">Tu Carta <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="astrobasicos.html">ASTROBÁSICOS <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active" id="tuCarta">
+                        <a class="nav-link" href="tuCarta.html">TU CARTA <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active" id="quienesSomos">
+                        <a class="nav-link" href="QuienesSomos.html">¿QUIÉNES SOMOS? <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="QuienesSomos.html">¿Quiénes somos? <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="Cursos.html">CURSOS <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="Cursos.html">Cursos <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="Tienda.html">TIENDA <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="Tienda.html">Tienda <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="Contacto.html">Contacto <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="Contacto.html">CONTACTO <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
-
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="..." aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                </form>
             </div>
         </nav>
     </header>
-
-
 
     <div class="row">
         <div class="col-md-12 p-4">
@@ -85,43 +78,58 @@
 
         </div>
     </div>
-
     <div class="centrarImagen">
         <img src="imagenes/GraficoCarta.png" class="ajustarImagen">
     </div>
-
     <div class="centrarImagen">
         <img src="imagenes/GraficoSignos.png" class="ajustarImagen">
     </div>
-
-
+    <br> <br>
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Servicios y Productos
+                        </h3>
+                        <ul>
+                            <li><a href="#">Cursos</a></li>
+                            <li><a href="#">Cartas Astrales</a></li>
+                            <li><a href="#">Cuadros decorativos</a></li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>Astropibas</h3>
+                        <ul>
+                            <li><a href="#">Sobre Nosotras</a></li>
+                            <li><a href="#">Tu Carta</a></li>
+                            <li>
+                                <a href="#">Contactanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#">
+                            <img src="imagenes/facebook.png" class="icon logoig">
+                        </a>
+                        <a href="#">
+                            <img src="imagenes/imginsta.png" class="icon logoig">
+                        </a>
+                        <a href="#">
+                            <img src="imagenes/imgwhats.png" class=" logoig">
+                        </a>
+                        <p class="copyright">Astropibas💜 © 2020 - Eugenia Vargas Silva</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<footer class="footer footer--grad">
-    <div class="row ml-3 p-3">
-        <div class="col-md-2">
-            <p class="footer__negrita">
-                Seguinos en las redes:
-            </p>
-
-        </div>
-        <div class="col-md-10">
-            <a href="https://www.instagram.com/astropibas_/">
-                <img src="imagenes/instaLogo.png" class="logoig">
-            </a>
-            <img src="imagenes/facebookLogo.png" class="logofb">
-            <img src="imagenes/gmailLogo.png" class="logospot">
-        </div>
-    </div>
-    <hr>
-    <div class="row ml-3 p-2">
-        <div class="col-md-7">
-            <p class="footer__negrita">
-                &copy; Astropibas 2020 - Hecho por nosotras con 💜
-            </p>
-        </div>
-    </div>
-</footer>
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -1,6 +1,12 @@
 .header {
   width: 100%;
-  background-color: white; }
+  background-color: seashell; }
+
+.header .navbar {
+  background-color: transparent !important; }
+
+body {
+  background-color: seashell; }
 
 .header__tituloPrincipal {
   color: #e342f5;
@@ -10,7 +16,7 @@
 nav {
   background-color: #F08080;
   width: 100%;
-  margin-bottom: 30px; }
+  margin-bottom: 1px; }
 
 .navbar__nav--grad {
   background-image: linear-gradient(to bottom, #f3c4ee, lavenderblush);
@@ -53,6 +59,15 @@ a {
 .letrasAstrologia {
   color: #7542f5; }
 
+.letrasAstrologia2 {
+  font-family: "Nunito", sans-serif !important; }
+
+#tuCarta {
+  width: 95px !important; }
+
+#quienesSomos {
+  width: 161px !important; }
+
 .astropibasContenidoIndex {
   margin-top: 3rem;
   padding: 1.5rem; }
@@ -91,27 +106,28 @@ a {
   width: 3.8%; }
 
 .logoig {
-  width: 2%; }
+  width: 70%;
+  text-align: center; }
 
 .logofb {
   width: 2%; }
 
-.logospot {
+.logowsp {
   width: 2.5%; }
 
 .logoPlaneta {
-  width: 17%;
-  height: 17%;
+  width: 25%;
+  height: 25%;
   padding-left: 10px; }
 
 .logoSol {
-  width: 14%;
-  height: 14%;
+  width: 22%;
+  height: 22%;
   padding-left: 10px; }
 
 .logoCasa {
-  width: 70%;
-  height: 70%;
+  width: 80%;
+  height: 80%;
   padding-left: 10px; }
 
 .textoTienda {
@@ -127,14 +143,14 @@ a {
   transform: scale(1.2, 1.2); }
 
 .imagenSigno {
-  width: 55%;
-  height: 52%;
+  width: 50%;
+  height: 47%;
   display: block;
   margin: auto; }
 
 .imagenPlaneta {
   width: 54%;
-  height: 40%;
+  height: 70%;
   display: block;
   margin: auto; }
 
@@ -143,7 +159,7 @@ a {
   height: 45%;
   display: block;
   margin: auto;
-  margin-top: 6rem; }
+  margin-top: 0rem; }
 
 .comoInterpretarlo {
   width: 55%;
@@ -214,20 +230,22 @@ a {
 .grilla {
   display: grid;
   grid-template-areas: "header 	header 	   header" "cuadro    cuadro     imagen" "info      info 	   imagen" "footer 	footer 	   footer";
-  grid-template-rows: 200px 1fr 1fr 110px;
+  grid-template-rows: 200px 1fr 2fr auto;
   grid-template-columns: auto auto 35%; }
 
 .grilla--header {
   grid-area: header; }
 
-.grilla--footer {
+.grilla--footer,
+#footer_grid {
   grid-area: footer; }
 
 .grilla__cuadro {
   grid-area: cuadro; }
 
 .grilla__info {
-  grid-area: info; }
+  grid-area: info;
+  margin-top: 70px !important; }
   .grilla__info p {
     margin-left: 1rem !important; }
 
@@ -239,11 +257,11 @@ a {
 
 @media (min-width: 300px) and (max-width: 600px) {
   .logoig {
-    width: 6%; }
+    width: 79%; }
   .logofb {
-    width: 6%; }
-  .logospot {
-    width: 7%; }
+    width: 79%; }
+  .logowsp {
+    width: 26%; }
   .logoPlaneta {
     width: 32%;
     height: 32%;
@@ -257,13 +275,13 @@ a {
     height: 75%;
     padding-left: 10px; }
   .imagenSigno {
-    width: 91%;
-    height: 31%;
+    width: 88%;
+    height: 29%;
     display: block;
     margin: auto; }
   .imagenPlaneta {
-    width: 89%;
-    height: 16%;
+    width: 92%;
+    height: 12%;
     display: block;
     margin: auto;
     margin-top: 3rem; }
@@ -272,16 +290,169 @@ a {
     height: 29%;
     display: block;
     margin: auto;
-    margin-top: 9rem; }
+    margin-top: 6rem; }
   .comoInterpretarlo {
     width: 91%;
     height: 31%;
     display: block;
     margin: auto;
-    margin-top: 4rem; } }
+    margin-top: 3rem; }
+  .ajustarImagen {
+    width: 90%;
+    height: 30%; }
+  .boton {
+    border-radius: 90px !important;
+    padding: 1rem 3rem;
+    color: black;
+    background-color: orchid; } }
 
-.boton {
-  border-radius: 90px !important;
-  padding: 1rem 3rem;
-  color: black;
-  background-color: orchid; }
+.footer-clean {
+  padding: 50px 0;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom, lavenderblush, #f3c4ee); }
+
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px; }
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0; }
+
+.footer-clean ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8; }
+
+.footer-clean ul a:hover {
+  opacity: 1; }
+
+.footer-clean .item.social {
+  text-align: right; }
+
+@media (max-width: 768px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px; } }
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align: center; }
+  .imagenSigno {
+    width: 88%;
+    height: 29%;
+    display: block;
+    margin: auto; }
+  .imagenPlaneta {
+    width: 92%;
+    height: 12%;
+    display: block;
+    margin: auto;
+    margin-top: 3rem; }
+  .imagenCasas {
+    width: 91%;
+    height: 29%;
+    display: block;
+    margin: auto;
+    margin-top: 6rem; }
+  .comoInterpretarlo {
+    width: 91%;
+    height: 31%;
+    display: block;
+    margin: auto;
+    margin-top: 3rem; }
+  .ajustarImagen {
+    width: 90%;
+    height: 30%; } }
+
+@media (min-width: 768px) and (max-width: 1366px) {
+  .footer-clean .item.social {
+    text-align: center; }
+  .nav {
+    width: 105%; }
+  .imagenSigno {
+    width: 87%;
+    height: 51%;
+    display: block;
+    margin: auto; }
+  .imagenPlaneta {
+    width: 92%;
+    height: 29%;
+    display: block;
+    margin: auto;
+    margin-top: 1rem; }
+  .imagenCasas {
+    width: 91%;
+    height: 37%;
+    display: block;
+    margin: auto;
+    margin-top: 3rem; }
+  .comoInterpretarlo {
+    width: 91%;
+    height: 64%;
+    display: block;
+    margin: auto;
+    margin-top: -12rem; }
+  .ajustarImagen {
+    width: 90%;
+    height: 30%; } }
+
+.footer-clean .item.social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  margin-top: 22px;
+  color: inherit;
+  opacity: 0.75; }
+
+.footer-clean .item.social > a:hover {
+  opacity: 0.9; }
+
+@media (max-width: 991px) {
+  .footer-clean .item.social > a {
+    margin-top: 40px; } }
+
+@media (max-width: 767px) {
+  .footer-clean .item.social > a {
+    margin-top: 10px; } }
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6; }
+
+.wrap-contact2 {
+  width: 790px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 90px 55px; }
+
+.container-contact2 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px; }
+
+#imagenEuge {
+  width: 100%;
+  height: 100%; }

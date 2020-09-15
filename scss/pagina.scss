@@ -1,365 +1,568 @@
-$fontAmatic: 'Amatic SC',
-cursive;
-$fontMulish:'Mulish',
-sans-serif;
-$font-nunito: 'Nunito',
-sans-serif;
-$width: 100%;
-$border: solid pink;
-$colorTituloHeader: #e342f5;
-$colorNav:#F08080;
-$colorLetrasAstro: #7542f5;
-$colorIndexSubt: #f542e3;
-@mixin medidas($width, $height) {
-    width: $width;
-    height: $height;
-}
-
-.header {
-    width: $width;
-    background-color: white;
-}
-
-.header__tituloPrincipal {
-    color: $colorTituloHeader;
-    font-family: $fontAmatic;
-    font-size: 50px;
-}
-
-nav {
-    background-color: $colorNav;
-    width: $width;
-    margin-bottom: 30px;
-}
-
-.navbar__nav--grad {
-    background-image: linear-gradient(to bottom, #f3c4ee, lavenderblush);
-    text-decoration: none;
-    color: black;
-    font-family: $fontMulish;
-}
-
-.footer {
-    @include medidas(168%, 175%);
-    margin-top: 150px;
-    bottom: 0;
-}
-
-.footer--luna {
-    margin-top: 150px;
-    bottom: 0;
-}
-
-.footer__negrita {
-    font-weight: bold;
-}
-
-.footer--grad {
-    background-image: linear-gradient(to bottom, lavenderblush, #f3c4ee);
-}
-
-a {
-    text-decoration: none;
-    color: black !important;
-}
-
-#imagenPrincipal {
-    @include medidas(450px, 400px);
-}
-
-.carousel-inner .carousel-item img {
-    min-height: 200px;
-    object-fit: cover;
-    height: 1%;
-}
-
-.centrar {
-    text-align: center;
-}
-
-.letrasAstrologia {
-    color: $colorLetrasAstro;
-}
-
-.astropibasContenidoIndex {
-    margin-top: 3rem;
-    padding: 1.5rem;
-}
-
-.astropibasContenidoIndex__2 {
-    padding: 1.5rem;
-}
-
-.astropibasContenidoIndex__subtitulo {
-    color: $colorIndexSubt;
-    margin-bottom: 10px;
-}
-
-.astrobasicos {
-    font-family: $fontMulish !important;
-}
-
-.astrobasicos__titulos {
-    margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
-}
-
-.astrobasicos__titulos--color {
-    color: $colorIndexSubt;
-}
-
-.subtitulosAstro {
-    color: $colorIndexSubt;
-    margin-bottom: 10px;
-}
-
-strong {
+    $fontAmatic: 'Amatic SC',
+    cursive;
+    $fontMulish:'Mulish',
+    sans-serif;
+    $font-nunito: 'Nunito',
+    sans-serif;
+    $width: 100%;
+    $border: solid pink;
+    $colorTituloHeader: #e342f5;
+    $colorNav:#F08080;
     $colorLetrasAstro: #7542f5;
-}
-
-.logoAstrobasicos {
-    width: 2%;
-}
-
-.logoigQS {
-    width: 3%;
-}
-
-.logofbQS {
-    width: 3%;
-}
-
-.logospotQS {
-    width: 3.8%;
-}
-
-.logoig {
-    width: 2%;
-}
-
-.logofb {
-    width: 2%;
-}
-
-.logospot {
-    width: 2.5%;
-}
-
-.logoPlaneta {
-    @include medidas(17%, 17%);
-    padding-left: 10px;
-}
-
-.logoSol {
-    @include medidas(14%, 14%);
-    padding-left: 10px;
-}
-
-.logoCasa {
-    @include medidas(70%, 70%);
-    padding-left: 10px;
-}
-
-.textoTienda {
-    color: $colorIndexSubt;
-    margin-top: 10px;
-}
-
-.imagenTienda {
-    @include medidas(350px, 350px);
-    padding-left: 150px;
-}
-
-.imagen1:hover {
-    transform: scale(1.2, 1.2);
-}
-
-.imagenSigno {
-    @include medidas(55%, 52%);
-    display: block;
-    margin: auto;
-}
-
-.imagenPlaneta {
-    @include medidas(54%, 40%);
-    display: block;
-    margin: auto;
-}
-
-.imagenCasas {
-    @include medidas(55%, 45%);
-    display: block;
-    margin: auto;
-    margin-top: 6rem;
-}
-
-.comoInterpretarlo {
-    @include medidas(55%, 55%);
-    display: block;
-    margin: auto;
-}
-
-.imagenLuna {
-    @include medidas(100%, 100%);
-}
-
-.mecanismosLunares {
-    padding: 1.5em;
-}
-
-.ajustarImagen {
-    width: ($width/2)-10;
-}
-
-.centrarImagen {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.imgAstropibas {
-    width: 5%;
-    height: 5%;
-}
-
-
-/*---------------*/
-
-.alinearimg {
-    display: inline-block;
-}
-
-.bordes {
-    border: $border 4px;
-    padding: 30px 30px 30px 30px;
-}
-
-.bordesQS {
-    border: $border 2px;
-    padding: 15px 15px;
-    text-align: center;
-    width: 90%;
-}
-
-.bordesForm {
-    border: $border 4px;
-}
-
-#listaNavbar {
-    list-style: none;
-    display: -webkit-inline-box;
-}
-
-.separarSub {
-    padding-right: 10px;
-}
-
-.menuLink {
-    text-decoration: none;
-    color: black;
-    font-family: $fontMulish;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    height: max-content;
-}
-
-.rowTienda {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 5px;
-    margin-left: 40px;
-}
-
-
-/*------------------.}*/
-
-.grilla {
-    display: grid;
-    grid-template-areas: "header 	header 	   header" "cuadro    cuadro     imagen" "info      info 	   imagen" "footer 	footer 	   footer";
-    grid-template-rows: 200px 1fr 1fr 110px;
-    grid-template-columns: auto auto 35%;
-}
-
-.grilla--header {
-    grid-area: header;
-}
-
-.grilla--footer {
-    grid-area: footer;
-}
-
-.grilla__cuadro {
-    grid-area: cuadro;
-}
-
-.grilla__info {
-    grid-area: info;
-    p {
-        margin-left: 1rem !important;
+    $colorIndexSubt: #f542e3;
+    @mixin medidas($width, $height) {
+        width: $width;
+        height: $height;
     }
-}
-
-.grilla__imagen {
-    grid-area: imagen;
-}
-
-.grilla__imagen--ajustar {
-    width: $width;
-}
-
-@media (min-width: 300px) and (max-width: 600px) {
-    .logoig {
-        width: 6%;
+    
+    .header {
+        width: $width;
+        background-color: seashell;
     }
-    .logofb {
-        width: 6%;
+    
+    .header .navbar {
+        background-color: transparent !important;
     }
-    .logospot {
-        width: 7%;
+    
+    body {
+        background-color: seashell;
     }
-    .logoPlaneta {
-        @include medidas(32%, 32%);
-        padding-left: 10px;
+    
+    .header__tituloPrincipal {
+        color: $colorTituloHeader;
+        font-family: $fontAmatic;
+        font-size: 50px;
     }
-    .logoSol {
-        @include medidas(30%, 30%);
-        padding-left: 10px;
+    
+    nav {
+        background-color: $colorNav;
+        width: $width;
+        margin-bottom: 1px;
     }
-    .logoCasa {
-        @include medidas(75%, 75%);
-        padding-left: 10px;
+    
+    .navbar__nav--grad {
+        background-image: linear-gradient(to bottom, #f3c4ee, lavenderblush);
+        text-decoration: none;
+        color: black;
+        font-family: $fontMulish;
     }
-    .imagenSigno {
-        @include medidas(91%, 31%);
-        display: block;
-        margin: auto;
+    
+    .footer {
+        @include medidas(168%, 175%);
+        margin-top: 150px;
+        bottom: 0;
     }
-    .imagenPlaneta {
-        @include medidas(89%, 16%);
-        display: block;
-        margin: auto;
+    
+    .footer--luna {
+        margin-top: 150px;
+        bottom: 0;
+    }
+    
+    .footer__negrita {
+        font-weight: bold;
+    }
+    
+    .footer--grad {
+        background-image: linear-gradient(to bottom, lavenderblush, #f3c4ee);
+    }
+    
+    a {
+        text-decoration: none;
+        color: black !important;
+    }
+    
+    #imagenPrincipal {
+        @include medidas(450px, 400px);
+    }
+    
+    .carousel-inner .carousel-item img {
+        min-height: 200px;
+        object-fit: cover;
+        height: 1%;
+    }
+    
+    .centrar {
+        text-align: center;
+    }
+    
+    .letrasAstrologia {
+        color: $colorLetrasAstro;
+    }
+    
+    .letrasAstrologia2 {
+        font-family: $font-nunito !important;
+    }
+    
+    #tuCarta {
+        width: 95px !important;
+    }
+    
+    #quienesSomos {
+        width: 161px !important;
+    }
+    
+    .astropibasContenidoIndex {
         margin-top: 3rem;
+        padding: 1.5rem;
     }
+    
+    .astropibasContenidoIndex__2 {
+        padding: 1.5rem;
+    }
+    
+    .astropibasContenidoIndex__subtitulo {
+        color: $colorIndexSubt;
+        margin-bottom: 10px;
+    }
+    
+    .astrobasicos {
+        font-family: $fontMulish !important;
+    }
+    
+    .astrobasicos__titulos {
+        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .astrobasicos__titulos--color {
+        color: $colorIndexSubt;
+    }
+    
+    .subtitulosAstro {
+        color: $colorIndexSubt;
+        margin-bottom: 10px;
+    }
+    
+    strong {
+        $colorLetrasAstro: #7542f5;
+    }
+    
+    .logoAstrobasicos {
+        width: 2%;
+    }
+    
+    .logoigQS {
+        width: 3%;
+    }
+    
+    .logofbQS {
+        width: 3%;
+    }
+    
+    .logospotQS {
+        width: 3.8%;
+    }
+    
+    .logoig {
+        width: 70%;
+        text-align: center;
+    }
+    
+    .logofb {
+        width: 2%;
+    }
+    
+    .logowsp {
+        width: 2.5%;
+    }
+    
+    .logoPlaneta {
+        @include medidas(25%, 25%);
+        padding-left: 10px;
+    }
+    
+    .logoSol {
+        @include medidas(22%, 22%);
+        padding-left: 10px;
+    }
+    
+    .logoCasa {
+        @include medidas(80%, 80%);
+        padding-left: 10px;
+    }
+    
+    .textoTienda {
+        color: $colorIndexSubt;
+        margin-top: 10px;
+    }
+    
+    .imagenTienda {
+        @include medidas(350px, 350px);
+        padding-left: 150px;
+    }
+    
+    .imagen1:hover {
+        transform: scale(1.2, 1.2);
+    }
+    
+    // ---------------astrobasicos-----------
+    .imagenSigno {
+        @include medidas(50%, 47%);
+        display: block;
+        margin: auto;
+    }
+    
+    .imagenPlaneta {
+        @include medidas(54%, 70%);
+        display: block;
+        margin: auto;
+    }
+    
     .imagenCasas {
-        @include medidas(91%, 29%);
+        @include medidas(55%, 45%);
         display: block;
         margin: auto;
-        margin-top: 9rem;
+        margin-top: 0rem;
     }
+    
     .comoInterpretarlo {
-        @include medidas(91%, 31%);
+        @include medidas(55%, 55%);
         display: block;
         margin: auto;
-        margin-top: 4rem;
     }
-}
-
-.boton {
-    border-radius: 90px !important;
-    padding: 1rem 3rem;
-    color: black;
-    background-color: orchid;
-}
+    
+    .imagenLuna {
+        @include medidas(100%, 100%);
+    }
+    
+    .mecanismosLunares {
+        padding: 1.5em;
+    }
+    
+    .ajustarImagen {
+        width: ($width/2)-10;
+    }
+    
+    .centrarImagen {
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .imgAstropibas {
+        width: 5%;
+        height: 5%;
+    }
+    /*---------------*/
+    
+    .alinearimg {
+        display: inline-block;
+    }
+    
+    .bordes {
+        border: $border 4px;
+        padding: 30px 30px 30px 30px;
+    }
+    
+    .bordesQS {
+        border: $border 2px;
+        padding: 15px 15px;
+        text-align: center;
+        width: 90%;
+    }
+    
+    .bordesForm {
+        border: $border 4px;
+    }
+    
+    #listaNavbar {
+        list-style: none;
+        display: -webkit-inline-box;
+    }
+    
+    .separarSub {
+        padding-right: 10px;
+    }
+    
+    .menuLink {
+        text-decoration: none;
+        color: black;
+        font-family: $fontMulish;
+    }
+    
+    .col {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    
+    .rowTienda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 5px;
+        margin-left: 40px;
+    }
+    /*------------------.}*/
+    
+    .grilla {
+        display: grid;
+        grid-template-areas: "header 	header 	   header" "cuadro    cuadro     imagen" "info      info 	   imagen" "footer 	footer 	   footer";
+        grid-template-rows: 200px 1fr 2fr auto;
+        grid-template-columns: auto auto 35%;
+    }
+    
+    .grilla--header {
+        grid-area: header;
+    }
+    
+    .grilla--footer,
+    #footer_grid {
+        grid-area: footer;
+    }
+    
+    .grilla__cuadro {
+        grid-area: cuadro;
+    }
+    
+    .grilla__info {
+        grid-area: info;
+        p {
+            margin-left: 1rem !important;
+        }
+        margin-top: 70px !important;
+    }
+    
+    .grilla__imagen {
+        grid-area: imagen;
+    }
+    
+    .grilla__imagen--ajustar {
+        width: $width;
+    }
+    
+    @media (min-width: 300px) and (max-width: 600px) {
+        .logoig {
+            width: 79%;
+        }
+        .logofb {
+            width: 79%;
+        }
+        .logowsp {
+            width: 26%;
+        }
+        .logoPlaneta {
+            @include medidas(32%, 32%);
+            padding-left: 10px;
+        }
+        .logoSol {
+            @include medidas(30%, 30%);
+            padding-left: 10px;
+        }
+        .logoCasa {
+            @include medidas(75%, 75%);
+            padding-left: 10px;
+        }
+        .imagenSigno {
+            @include medidas(88%, 29%);
+            display: block;
+            margin: auto;
+        }
+        .imagenPlaneta {
+            @include medidas(92%, 12%);
+            display: block;
+            margin: auto;
+            margin-top: 3rem;
+        }
+        .imagenCasas {
+            @include medidas(91%, 29%);
+            display: block;
+            margin: auto;
+            margin-top: 6rem;
+        }
+        .comoInterpretarlo {
+            @include medidas(91%, 31%);
+            display: block;
+            margin: auto;
+            margin-top: 3rem;
+        }
+        .ajustarImagen {
+            @include medidas (90%, 30%);
+        }
+        .boton {
+            border-radius: 90px !important;
+            padding: 1rem 3rem;
+            color: black;
+            background-color: orchid;
+        }
+    }
+    
+    // -------------------------
+    .footer-clean {
+        padding: 50px 0;
+        background-color: #fff;
+        background-image: linear-gradient(to bottom, lavenderblush, #f3c4ee);
+    }
+    
+    .footer-clean h3 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .footer-clean ul {
+        padding: 0;
+        list-style: none;
+        line-height: 1.6;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    .footer-clean ul a {
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+    
+    .footer-clean ul a:hover {
+        opacity: 1;
+    }
+    
+    .footer-clean .item.social {
+        text-align: right;
+    }
+    
+    @media (max-width:768px) {
+        .footer-clean .item {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .footer-clean .item.social {
+            text-align: center;
+        }
+        .imagenSigno {
+            @include medidas(88%, 29%);
+            display: block;
+            margin: auto;
+        }
+        .imagenPlaneta {
+            @include medidas(92%, 12%);
+            display: block;
+            margin: auto;
+            margin-top: 3rem;
+        }
+        .imagenCasas {
+            @include medidas(91%, 29%);
+            display: block;
+            margin: auto;
+            margin-top: 6rem;
+        }
+        .comoInterpretarlo {
+            @include medidas(91%, 31%);
+            display: block;
+            margin: auto;
+            margin-top: 3rem;
+        }
+        .ajustarImagen {
+            @include medidas (90%, 30%);
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 1366px) {
+        .footer-clean .item.social {
+            text-align: center;
+        }
+        // .footer {
+        //     @include medidas(175%, 175%);
+        //     margin-top: 150px;
+        //     bottom: 0;
+        // }
+        .nav {
+            width: 105%;
+        }
+        .imagenSigno {
+            @include medidas(87%, 51%);
+            display: block;
+            margin: auto;
+        }
+        .imagenPlaneta {
+            @include medidas(92%, 29%);
+            display: block;
+            margin: auto;
+            margin-top: 1rem;
+        }
+        .imagenCasas {
+            @include medidas(91%, 37%);
+            display: block;
+            margin: auto;
+            margin-top: 3rem;
+        }
+        .comoInterpretarlo {
+            @include medidas(91%, 64%);
+            display: block;
+            margin: auto;
+            margin-top: -12rem;
+        }
+        .ajustarImagen {
+            @include medidas (90%, 30%);
+        }
+    }
+    
+    .footer-clean .item.social>a {
+        font-size: 24px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        margin-left: 10px;
+        margin-top: 22px;
+        color: inherit;
+        opacity: 0.75;
+    }
+    
+    .footer-clean .item.social>a:hover {
+        opacity: 0.9;
+    }
+    
+    @media (max-width:991px) {
+        .footer-clean .item.social>a {
+            margin-top: 40px;
+        }
+    }
+    
+    @media (max-width:767px) {
+        .footer-clean .item.social>a {
+            margin-top: 10px;
+        }
+    }
+    
+    .footer-clean .copyright {
+        margin-top: 14px;
+        margin-bottom: 0;
+        font-size: 13px;
+        opacity: 0.6;
+    }
+    
+    .wrap-contact2 {
+        width: 790px;
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 72px 55px 90px 55px;
+    }
+    
+    .container-contact2 {
+        width: 100%;
+        min-height: 100vh;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    
+    // --------------------------------------------
+    #imagenEuge {
+        width: 100%;
+        height: 100%;
+    }
