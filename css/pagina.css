@@ -164,8 +164,8 @@ a {
 .comoInterpretarlo {
   width: 55%;
   height: 55%;
-  display: block;
-  margin: auto; }
+  text-align: center;
+  margin-top: 3rem; }
 
 .imagenLuna {
   width: 100%;
@@ -399,8 +399,8 @@ a {
     margin: auto;
     margin-top: -12rem; }
   .ajustarImagen {
-    width: 90%;
-    height: 30%; } }
+    width: 50%;
+    height: 100%; } }
 
 .footer-clean .item.social > a {
   font-size: 24px;

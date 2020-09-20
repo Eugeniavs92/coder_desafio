@@ -217,8 +217,8 @@
     
     .comoInterpretarlo {
         @include medidas(55%, 55%);
-        display: block;
-        margin: auto;
+        text-align: center;
+        margin-top: 3rem;
     }
     
     .imagenLuna {
@@ -230,7 +230,7 @@
     }
     
     .ajustarImagen {
-        width: ($width/2)-10;
+        width: 40%;
     }
     
     .centrarImagen {
@@ -497,7 +497,7 @@
             margin-top: -12rem;
         }
         .ajustarImagen {
-            @include medidas (90%, 30%);
+            @include medidas (50%, 100%);
         }
     }
     
