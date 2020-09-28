@@ -444,7 +444,6 @@ textarea.input2+.focus-input2::after {
     right: 0px;
     pointer-events: none;
     font-family: 'Amatic SC', cursive;
-    ;
     color: #c80000;
     font-size: 13px;
     line-height: 1.4;

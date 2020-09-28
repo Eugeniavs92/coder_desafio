@@ -15,12 +15,18 @@ $colorIndexSubt: #f542e3;
     height: $height;
 }
 
-.header {
+@mixin medidasImagenesAstrobasicos($height, $width) {
+    height: $height;
     width: $width;
-    background-color: seashell;
+    display: block;
+    margin: auto;
 }
 
-.header .navbar {
+@mixin medidasQS($width) {
+    width: $width;
+}
+
+.navbar {
     background-color: transparent !important;
 }
 
@@ -45,20 +51,6 @@ nav {
     text-decoration: none;
     color: black;
     font-family: $fontMulish;
-}
-
-.footer {
-    @include medidas(168%, 175%);
-    margin-top: 150px;
-    bottom: 0;
-}
-
-.footer__negrita {
-    font-weight: bold;
-}
-
-.footer--grad {
-    background-image: linear-gradient(to bottom, lavenderblush, #f3c4ee);
 }
 
 a {
@@ -101,10 +93,6 @@ a {
     padding: 1.5rem;
 }
 
-.astropibasContenidoIndex__2 {
-    padding: 1.5rem;
-}
-
 .astropibasContenidoIndex__subtitulo {
     color: $colorIndexSubt;
     margin-bottom: 10px;
@@ -112,28 +100,29 @@ a {
 
 .astrobasicos {
     font-family: $fontMulish !important;
+    h4 {
+        margin-bottom: 0.5rem;
+        margin-top: 1.5rem;
+        color: $colorIndexSubt;
+    }
+    img {
+        width: 2%;
+    }
+    strong {
+        color: $colorLetrasAstro;
+    }
 }
 
-.astrobasicos__titulos {
-    margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
-}
-
-.astrobasicos__titulos--color {
-    color: $colorIndexSubt;
+.astrobasicosLuna {
+    font-family: $fontMulish !important;
+    strong {
+        color: $colorLetrasAstro;
+    }
 }
 
 .subtitulosAstro {
     color: $colorIndexSubt;
     margin-bottom: 10px;
-}
-
-strong {
-    $colorLetrasAstro: #7542f5;
-}
-
-.logoAstrobasicos {
-    width: 2%;
 }
 
 .logosRedes {
@@ -142,25 +131,12 @@ strong {
     padding-bottom: 10px;
 }
 
-.logosRedesLuna {
-    width: 70%;
-    text-align: center;
-    padding-top: 5px !important;
-}
-
 .logoPlaneta {
-    @include medidas(25%, 25%);
-    padding-left: 10px;
+    @include medidasQS(25%);
 }
 
 .logoSol {
-    @include medidas(22%, 22%);
-    padding-left: 10px;
-}
-
-.logoCasa {
-    @include medidas(80%, 80%);
-    padding-left: 10px;
+    @include medidasQS(22%);
 }
 
 .textoTienda {
@@ -170,37 +146,24 @@ strong {
 
 .imagenTienda {
     @include medidas(350px, 350px);
-    padding-left: 150px;
+    padding: 1%;
 }
 
-.imagen1:hover {
-    transform: scale(1.2, 1.2);
-}
-
-// ---------------astrobasicos-----------
 .imagenSigno {
-    @include medidas(50%, 47%);
     display: block;
     margin: auto;
 }
 
 .imagenPlaneta {
-    @include medidas(54%, 70%);
-    display: block;
-    margin: auto;
+    @include medidasImagenesAstrobasicos(100%, 69%);
 }
 
 .imagenCasas {
-    @include medidas(55%, 45%);
-    display: block;
-    margin: auto;
-    margin-top: 0rem;
+    @include medidasImagenesAstrobasicos(90%, 65%);
 }
 
 .comoInterpretarlo {
-    @include medidas(55%, 55%);
-    text-align: center;
-    margin-top: 3rem;
+    @include medidasImagenesAstrobasicos(90%, 65%);
 }
 
 .imagenLuna {
@@ -225,16 +188,8 @@ strong {
     height: 5%;
 }
 
-
-/*---------------*/
-
-.alinearimg {
-    display: inline-block;
-}
-
 .bordes {
     border: $border 4px;
-    padding: 30px 30px 30px 30px;
 }
 
 .bordesQS {
@@ -242,24 +197,6 @@ strong {
     padding: 15px 15px;
     text-align: center;
     width: 90%;
-}
-
-.bordesForm {
-    border: $border 4px;
-}
-
-#listaNavbar {
-    list-style: none;
-}
-
-.separarSub {
-    padding-right: 10px;
-}
-
-.menuLink {
-    text-decoration: none;
-    color: black;
-    font-family: $fontMulish;
 }
 
 .col {
@@ -271,69 +208,19 @@ strong {
 .rowTienda {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 5px;
-    margin-left: 40px;
+    flex-wrap: wrap;
 }
 
-
-/*------------------.}*/
-
-@media (min-width: 300px) and (max-width: 600px) {
-    .logosRedes {
-        width: 79%;
-    }
-    .logofb {
-        width: 79%;
-    }
-    .logowsp {
-        width: 26%;
-    }
-    .logoPlaneta {
-        @include medidas(32%, 32%);
-        padding-left: 10px;
-    }
-    .logoSol {
-        @include medidas(30%, 30%);
-        padding-left: 10px;
-    }
-    .logoCasa {
-        @include medidas(75%, 75%);
-        padding-left: 10px;
-    }
-    .imagenSigno {
-        @include medidas(88%, 29%);
-        display: block;
-        margin: auto;
-    }
-    .imagenPlaneta {
-        @include medidas(92%, 12%);
-        display: block;
-        margin: auto;
-        margin-top: 3rem;
-    }
-    .imagenCasas {
-        @include medidas(91%, 29%);
-        display: block;
-        margin: auto;
-        margin-top: 6rem;
-    }
-    .comoInterpretarlo {
-        @include medidas(91%, 31%);
-        display: block;
-        margin: auto;
-        margin-top: 3rem;
-    }
-    .ajustarImagen {
-        @include medidas (90%, 30%);
-    }
-}
-
-// -------------------------
 .footer-clean {
-    padding: 50px 0;
+    padding: 50px;
     background-color: #fff;
     background-image: linear-gradient(to bottom, lavenderblush, #f3c4ee);
+    bottom: 0px;
+    width: 100%;
+}
+
+.footer-curso {
+    position: fixed;
 }
 
 .footer-clean h3 {
@@ -365,85 +252,6 @@ strong {
     text-align: right;
 }
 
-@media (max-width:768px) {
-    .footer-clean .item {
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-clean .item.social {
-        text-align: center;
-    }
-    .imagenSigno {
-        @include medidas(88%, 29%);
-        display: block;
-        margin: auto;
-    }
-    .imagenPlaneta {
-        @include medidas(92%, 12%);
-        display: block;
-        margin: auto;
-        margin-top: 3rem;
-    }
-    .imagenCasas {
-        @include medidas(91%, 29%);
-        display: block;
-        margin: auto;
-        margin-top: 6rem;
-    }
-    .comoInterpretarlo {
-        @include medidas(91%, 31%);
-        display: block;
-        margin: auto;
-        margin-top: 3rem;
-    }
-    .ajustarImagen {
-        @include medidas (90%, 30%);
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1366px) {
-    .footer-clean .item.social {
-        text-align: center;
-    }
-    // .footer {
-    //     @include medidas(175%, 175%);
-    //     margin-top: 150px;
-    //     bottom: 0;
-    // }
-    .nav {
-        width: 105%;
-    }
-    .imagenSigno {
-        @include medidas(87%, 51%);
-        display: block;
-        margin: auto;
-    }
-    .imagenPlaneta {
-        @include medidas(92%, 29%);
-        display: block;
-        margin: auto;
-        margin-top: 1rem;
-    }
-    .imagenCasas {
-        @include medidas(91%, 37%);
-        display: block;
-        margin: auto;
-        margin-top: 3rem;
-    }
-    .comoInterpretarlo {
-        @include medidas(91%, 64%);
-        display: block;
-        margin: auto;
-        margin-top: -12rem;
-    }
-    .ajustarImagen {
-        @include medidas (50%, 100%);
-    }
-}
-
 .footer-clean .item.social>a {
     font-size: 24px;
     width: 40px;
@@ -463,22 +271,10 @@ strong {
     opacity: 0.9;
 }
 
-@media (max-width:991px) {
-    .footer-clean .item.social>a {
-        margin-top: 40px;
-    }
-}
-
-@media (max-width:767px) {
-    .footer-clean .item.social>a {
-        margin-top: 10px;
-    }
-}
-
 .footer-clean .copyright {
     margin-top: 14px;
     margin-bottom: 0;
-    font-size: 13px;
+    font-size: 12px;
     opacity: 0.6;
 }
 
@@ -504,10 +300,10 @@ strong {
     padding: 15px;
 }
 
-// --------------------------------------------
 #imagenEuge {
     width: 100%;
     height: 100%;
+    border-radius: 60px;
 }
 
 .btn-secondary {
@@ -516,6 +312,91 @@ strong {
     border-color: #E752BE;
 }
 
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #8c1d6c;
+    border-color: #8c1d6c;
+}
+
 .row {
-    margin: 0%
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% !important;
+}
+
+#contactoCheck {
+    margin: 6px 5px 0 0;
+}
+
+@media (max-width: 768px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+    .imagenSigno {
+        @include medidasImagenesAstrobasicos(115%, 65%);
+    }
+    .imagenPlaneta {
+        @include medidasImagenesAstrobasicos(110%, 70%);
+    }
+    .imagenCasas {
+        @include medidasImagenesAstrobasicos(105%, 65%);
+    }
+    .comoInterpretarlo {
+        @include medidasImagenesAstrobasicos(100%, 65%);
+    }
+    .ajustarImagen {
+        @include medidas (90%, 30%);
+    }
+    .footer-clean .item {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1366px) {
+    .footer-clean .item.social {
+        text-align: center;
+    }
+    .nav {
+        width: 105%;
+    }
+    .imagenSigno {
+        @include medidasImagenesAstrobasicos(100%, 50%);
+    }
+    .imagenPlaneta {
+        @include medidasImagenesAstrobasicos(100%, 50%);
+    }
+    .imagenCasas {
+        @include medidasImagenesAstrobasicos(100%, 50%);
+    }
+    .comoInterpretarlo {
+        @include medidasImagenesAstrobasicos(100%, 50%);
+    }
+    .ajustarImagen {
+        @include medidas (50%, 100%);
+    }
+}
+
+@media (max-width: 991px) {
+    .footer-clean .item.social>a {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-clean .item.social>a {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-curso {
+        position: inherit;
+    }
+    .logoPlaneta {
+        @include medidasQS(45%);
+    }
+    .logoSol {
+        @include medidasQS(40%);
+    }
 }
