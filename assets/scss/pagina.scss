@@ -372,9 +372,6 @@ a {
     .comoInterpretarlo {
         @include medidasImagenesAstrobasicos(100%, 50%);
     }
-    .ajustarImagen {
-        @include medidas (50%, 100%);
-    }
 }
 
 @media (max-width: 991px) {

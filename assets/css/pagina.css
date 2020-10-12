@@ -309,10 +309,7 @@ a {
     height: 100%;
     width: 50%;
     display: block;
-    margin: auto; }
-  .ajustarImagen {
-    width: 50%;
-    height: 100%; } }
+    margin: auto; } }
 
 @media (max-width: 991px) {
   .footer-clean .item.social > a {
